@@ -1,3 +1,15 @@
+## 1.0.0 (2021-10-28)
+
+
+### Bug Fixes
+
+* change baseURL folder ([998e300](https://github.com/shanrath/sauce-template/commit/998e300dba1acfa47e2bff60ec374780aba3e087))
+
+
+### Build System
+
+* rm cname from release yml ([a73ff41](https://github.com/shanrath/sauce-template/commit/a73ff41d1e2cf91d2c8d8142e0f9b0b553cefe18))
+
 ## 1.0.0 (2021-10-27)
 
 
