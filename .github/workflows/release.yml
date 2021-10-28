@@ -159,7 +159,6 @@ jobs:
           publish_dir: ./build
           commit_message: ${{ github.event.head_commit.message }}
           enable_jekyll: false
-          cname: docs.opensauced.pizza
 
   cleanup:
     name: Cleanup actions
