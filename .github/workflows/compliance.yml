@@ -1,0 +1,28 @@
+name: "Compliance"
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  semantics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: amannn/action-semantic-pull-request@v3.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  welcome:
+    runs-on: ubuntu-latest
+    needs: semantics
+    if: github.event.action == 'opened'
+
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: |-
+            Congrats on making your first Pull Request. This is a repo from a [GitHub Universe workshop](https://www.githubuniverse.com/2021/session/693862/setup-continuous-delivery-with-github-actions?uid=6179bf862af3a&reg_type_id=120820).
