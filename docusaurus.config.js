@@ -6,7 +6,7 @@ module.exports = {
   title: 'Open Sauced',
   tagline: 'Dinosaurs are cool',
   url: 'https://github-craftwork.github.io/docs-template/',
-  baseUrl: '/docs-template/',
+  baseUrl: '/sauce-template/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
